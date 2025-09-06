@@ -1,0 +1,48 @@
+.thumbnail-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding: 1rem;
+  background: var(--card-bg);
+  border-radius: 8px;
+  box-shadow: inset var(--tn-boxshadow-in),
+              inset var(--tn-boxshadow-out);
+}
+
+.thumbnails-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: nowrap;
+}
+
+.thumbnails-row img {
+  flex: 0 0 auto;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.thumbnails-row img:hover {
+  transform: scale(1.05);
+}
+
+.thumbnail-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.thumbnail-container::-webkit-scrollbar-track {
+  background: var(--accent);
+  border-radius: 4px;
+}
+
+.thumbnail-container::-webkit-scrollbar-thumb {
+  background: var(--switch-track);
+  border-radius: 4px;
+}
+
+.thumbnail-container::-webkit-scrollbar-thumb:hover {
+  background: var(--switch-flip);
+}

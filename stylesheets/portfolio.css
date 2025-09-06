@@ -1,0 +1,38 @@
+h1{
+  margin-bottom: .25px;
+  padding-bottom: 1%;
+}
+
+.columns-wrapper {
+  display: flex;
+  gap: 20px;
+  max-width: 70%;
+  margin: 2rem auto;
+}
+
+.column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.column img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.column img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 1024px) {
+  .columns-wrapper {
+    flex-direction: column;
+  }
+}
+
+

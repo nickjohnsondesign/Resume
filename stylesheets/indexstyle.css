@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400&family=Arimo:wght@400;500&family=Comfortaa:wght@300;400&family=Frank+Ruhl+Libre&family=Noto+Sans+Tamil:wght@300;400&family=Roboto:wght@300&family=Scada:ital,wght@1,700&family=Staatliches&family=Zen+Kaku+Gothic+New:wght@300;400;700&family=Zen+Maru+Gothic&family=Zilla+Slab:wght@300;400&display=swap'); 
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+header {
+  padding: 1rem;
+  text-align: center;
+  background: var(--card-bg);
+  box-shadow: var(--box-shadow-header);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+h1 { 
+  text-align: center;
+  font-family: 'Archivo', sans-serif;
+  font-weight: bold; 
+  text-transform: uppercase; 
+  letter-spacing: .25em;
+} 
+
+.name-container{
+  margin: 3rem;
+}
+
+h5 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  color: var(--text);
+  font-size: 1em;
+  margin: 0;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.content {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: var(--box-shadow-content);
+}
+
+h2 {
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 0.3rem;
+}
+
+section.experience ul {
+  margin-left: 2rem;
+}
+
+.workexperience .work h3 {
+  margin: 0.25rem 0; 
+}
+
+.work .job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%; 
+  margin-bottom: 0.5rem;
+}
+
+.work .company {
+  font-weight: 500;
+}
+
+.work .job-dates {
+  font-style: italic;
+  color: var(--accent);
+  white-space: nowrap;
+}

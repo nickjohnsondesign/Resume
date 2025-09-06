@@ -1,0 +1,136 @@
+
+.textbody{
+  margin: 0 auto;    
+  max-width: 1200px;  
+  padding: 0 1rem;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+header {
+  padding: 1rem;
+  text-align: center;
+  background: var(--card-bg);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+h1 {
+  text-indent: 5%;
+  margin-top: 1.8rem;
+  text-shadow: 2px 2px 2px var(--shadow-dark),
+  -2px -2px 5px var(--shadow-light);
+  text-decoration: underline;
+}
+
+.hfwf {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  max-width: 80%;
+  background: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 8px 8px 8px rgba(0,0,0,0.2);
+  transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  border: var(--border);
+}
+
+.hfwf:hover {
+  transform: scale(1.01);
+  box-shadow: 10px 8px 10px rgba(0,0,0,0.175);
+}
+
+.hfwf .wireframe-content {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.hfwf .wireframe-content img, 
+.hfwf .wireframe-content img iframe {
+  border: var(--border);
+  max-width: 500px;
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.hfwf .wireframe-content p,
+.hfwf .wireframe-content .text {
+  flex: 1;
+  margin: 0;
+  line-height: 1.5;
+  font-size: 1.2rem;
+  margin-left: 1rem;
+}
+
+.hfwf h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  padding-bottom: 1.5%;
+  max-width: 500px;
+}
+
+.hfwf h3 a {
+  text-decoration: none;
+  color: var(--text);
+  transition: color 0.3s ease;
+}
+
+.hfwf h3 a:hover {
+  color: var(--accent);
+}
+
+.hfwf .wireframe-content {
+  margin: 0 3%;
+}
+
+.hfwf .wireframe-content a {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .hfwf .wireframe-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hfwf .wireframe-content img,
+  .hfwf .wireframe-content iframe {
+    max-width: 100%;
+  }
+
+  .hfwf .wireframe-content p,
+  .hfwf .wireframe-content .text {
+    text-align: left;
+  }
+}
+
+.wireframe-content .slides-container {
+  display: flex;
+  gap: 1.5rem; 
+  align-items: flex-start;
+}
+
+.slides-container iframe {
+  flex: 1 1 50%; 
+  max-width: 500px; 
+  height: 300px; 
+  border: none;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px var(--lifted-shadow);
+}
+
+.slides-container .text {
+  flex: 1 1 50%;
+  text-align: left;
+}

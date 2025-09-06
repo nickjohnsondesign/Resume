@@ -1,0 +1,42 @@
+.theme-switch {
+  position: absolute;
+  right: 1rem;
+  margin-right: 1%;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.theme-switch label {
+  display: block;
+  width: 50px;
+  height: 26px;
+  background: var(--switch-track);
+  border-radius: 13px;
+  position: relative;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.theme-switch label::after {
+  content: "";
+  width: 22px;
+  height: 22px;
+  background: var(--button-color);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 2px;
+  transform: translateY(-50%);
+  transition: transform 0.3s;
+  box-shadow: 0 2px 5px var(--nav);
+}
+
+.theme-switch input:checked + label {
+  background: var(--switch-flip);
+}
+
+.theme-switch input:checked + label::after {
+  transform: translateX(24px) translateY(-50%); 
+}

@@ -1,0 +1,96 @@
+.page-nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;    
+    background: var(--card-bg);
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.page-nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    gap: 2rem;
+}
+
+.page-nav li {
+    position: relative;
+    padding: 0 15px;
+    margin: 0 15px;
+}
+
+.page-nav li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;           
+    transform: translateY(-50%); 
+    width: 1px;         
+    height: 120%;        
+    background: var(--accent);
+    background: linear-gradient(to right, var(--accent), var(--nav));
+    margin: 0 -2rem;
+}
+
+.page-nav a {
+    font-size: 1.2rem;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    color: var(--text);
+    line-height: 1;
+}
+
+.page-nav li a {
+    position: relative;
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 5px 0;
+    transition: color 0.3s;
+}
+
+.page-nav li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: var(--accent);
+    transition: width 0.3s;
+}
+
+.page-nav li a:hover {
+    text-shadow:
+    0 0 2px var(--accent),
+}
+
+.page-nav li a:hover::after {
+    width: 100%; 
+}
+
+.page-nav li a {
+    position: relative;
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 5px 0;
+    transition: text-shadow 0.3s;
+}
+
+.page-nav .logo img {
+    height: 40px;
+    width: auto;
+    display: block;
+    margin-left: 50%;
+}
+
+.page-nav .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    flex: 1;
+    justify-content: center;
+}
+
+
