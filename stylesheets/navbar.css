@@ -1,9 +1,33 @@
 .page-nav {
     display: flex;
     justify-content: space-between; 
-    align-items: center;    
+    align-items: center;
+    padding: 10px;
     background: var(--card-bg);
     transition: background 0.3s ease, color 0.3s ease;
+}
+
+header {
+  padding-top: .35rem;
+  padding-bottom: .35rem;
+  text-align: center;
+  background: var(--card-bg);
+  box-shadow: var(--box-shadow-header);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+  }
+
+    .navbar a {
+        padding: 8px;
+        text-align: left;
+        width: 100%;
+  }
 }
 
 .page-nav ul {
@@ -83,6 +107,8 @@
     width: auto;
     display: block;
     margin-left: 50%;
+    filter: var(--invert);
+    transition: background 0.5s ease, color 0.5s ease;
 }
 
 .page-nav .nav-links {

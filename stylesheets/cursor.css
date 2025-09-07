@@ -1,0 +1,9 @@
+.page-nav a,
+button,
+.theme-switch label,
+.image-container,
+.thumbnail-container,
+.wireframe-content a {
+  cursor: pointer;
+  user-select: none;   
+}
