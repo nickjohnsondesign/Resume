@@ -10,8 +10,8 @@
   height: 50px;
   border: none;
   border-radius: 50%;
-  background: var(--accent);
-  color: var(--button-color);
+  background: var(--accent2);
+  color: var(--accent2);
   font-size: 1.5rem;
   cursor: pointer;
   opacity: 0;
@@ -22,13 +22,13 @@
 }
 
 #totopbutton.show {
-  opacity: 50%;
+  opacity: var(--opacity);
   pointer-events: auto;
 }
 
 #totopbutton:hover {
   transform: scale(1.1);
-  background: var(--button-hover);
+  background: var(--accent2);
   opacity: 1;
 }
 
@@ -37,4 +37,5 @@
   height: 100%;
   object-fit: contain;
   display: block;
+  transform: translateY(-1px);
 }

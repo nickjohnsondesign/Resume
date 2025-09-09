@@ -23,7 +23,7 @@
   content: "";
   width: 22px;
   height: 22px;
-  background: var(--button-color);
+  background: var(--accent2);
   border-radius: 50%;
   position: absolute;
   top: 50%;

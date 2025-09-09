@@ -16,7 +16,6 @@ header {
     transition: background 0.3s ease, color 0.3s ease;
 }
 
-
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
@@ -53,8 +52,8 @@ header {
     transform: translateY(-50%); 
     width: 1px;         
     height: 120%;        
-    background: var(--accent);
-    background: linear-gradient(to right, var(--accent), var(--nav));
+    background: var(--accent2);
+    background: linear-gradient(to right, var(--accent2), var(--nav));
     margin: 0 -2rem;
 }
 
@@ -81,7 +80,7 @@ header {
     bottom: 0;
     width: 0;
     height: 2px;
-    background: var(--accent);
+    background: var(--accent2);
     transition: width 0.3s;
 }
 

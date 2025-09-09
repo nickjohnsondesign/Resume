@@ -7,7 +7,7 @@
   border-radius: 8px;
   box-shadow: inset var(--tn-boxshadow-in),
               inset var(--tn-boxshadow-out);
-  transition: background 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .thumbnails-row {
@@ -24,10 +24,12 @@
   border-radius: 6px;
   cursor: pointer;
   transition: transform 0.3s;
+  border: 2px solid transparent;
 }
 
 .thumbnails-row img:hover {
   transform: scale(1.05);
+  border: 2px solid var(--accent2);
 }
 
 .thumbnail-container::-webkit-scrollbar {
@@ -37,14 +39,15 @@
 .thumbnail-container::-webkit-scrollbar-track {
   background: var(--switch-flip);
   border-radius: 4px;
+  transition: background-color 0.3s ease;
 }
 
 .thumbnail-container::-webkit-scrollbar-thumb {
   background: rgba(180, 180, 180, 0.6);
-  transition: background 0.3s ease;
+  transition: background-color 0.3s ease;
   border-radius: 4px;
 }
 
 .thumbnail-container::-webkit-scrollbar-thumb:hover {
-  background: var(--switch-track);
+  background: var(--track-active);
 }
