@@ -8,12 +8,12 @@
 }
 
 header {
-  padding-top: .35rem;
-  padding-bottom: .35rem;
-  text-align: center;
-  background: var(--card-bg);
-  box-shadow: var(--box-shadow-header);
-  transition: background 0.3s ease, color 0.3s ease;
+    padding-top: .35rem;
+    padding-bottom: .35rem;
+    text-align: center;
+    background: var(--card-bg);
+    box-shadow: var(--box-shadow-header);
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 
@@ -102,13 +102,45 @@ header {
     transition: text-shadow 0.3s;
 }
 
-.page-nav .logo img {
-    height: 40px;
-    width: auto;
-    display: block;
-    margin-left: 50%;
-    filter: var(--invert);
-    transition: background 0.5s ease, color 0.5s ease;
+.page-nav .links {
+    position: absolute;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.page-nav .github, 
+.page-nav .linkedin {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.page-nav .github {
+    background-image: url("../thumbnail/github.svg");
+}
+
+.page-nav .linkedin {
+    background-image: url("../thumbnail/linkedin.svg");
+}
+
+.page-nav .email {
+    background-image: url("../thumbnail/envelopeblack.svg");
+}
+
+[data-theme="dark"] .page-nav .github {
+    background-image: url("../thumbnail/githubwhite.svg");
+}
+
+[data-theme="dark"] .page-nav .linkedin {
+    background-image: url("../thumbnail/linkedinwhite.svg");
+}
+
+[data-theme="dark"] .page-nav .email {
+    background-image: url("../thumbnail/envelopeblack.svg");
+
 }
 
 .page-nav .nav-links {
@@ -119,4 +151,34 @@ header {
     justify-content: center;
 }
 
+.page-nav a.github,
+.page-nav a.linkedin {
+    transition: transform 0.4s ease, filter 0.4s ease;
+    width: 24px;
+    height: 24px;
+    padding-left: 0.4rem;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
+.page-nav a.email {
+    transition: transform 0.4s ease;
+    width: 24px;
+    height: 24px;
+    padding-left: 0.8rem;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 120%;
+    filter: var(--invert);
+}
+
+
+.page-nav a.github:hover,
+.page-nav a.linkedin:hover,
+.page-nav a.email:hover {
+    transform: scale(1.2);
+}
