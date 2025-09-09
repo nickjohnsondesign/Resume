@@ -18,7 +18,7 @@
   pointer-events: none;
   transition: opacity 0.3s, transform 0.2s;
   z-index: 1000;
-  scale: 1;
+  scale: .9;
 }
 
 #totopbutton.show {
@@ -35,6 +35,7 @@
 #totopbutton img {
   width: 100%;
   height: 100%;
+  scale: 0.8;
   object-fit: contain;
   display: block;
   transform: translateY(-1px);
