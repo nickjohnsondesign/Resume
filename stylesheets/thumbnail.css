@@ -43,7 +43,7 @@
 }
 
 .thumbnail-container::-webkit-scrollbar-thumb {
-  background: rgba(180, 180, 180, 0.6);
+  background: var(--track-inactive);
   transition: background-color 0.3s ease;
   border-radius: 4px;
 }

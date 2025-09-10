@@ -93,6 +93,17 @@ header {
     width: 100%; 
 }
 
+.page-nav li.current a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100% !important;
+    height: 2px;
+    background: var(--accent2);
+    border-radius: 999px;
+}
+
 .page-nav li a {
     position: relative;
     text-decoration: none;
@@ -151,30 +162,53 @@ header {
 }
 
 .page-nav a.github,
-.page-nav a.linkedin {
-    transition: transform 0.4s ease, filter 0.4s ease;
+.page-nav a.linkedin,
+.page-nav a.email {
+    position: relative;
     width: 24px;
     height: 24px;
-    padding-left: 0.4rem;
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0.2rem;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    transition: transform 0.6s ease;
 }
 
 .page-nav a.email {
-    transition: transform 0.4s ease;
-    width: 24px;
-    height: 24px;
-    padding-left: 0.8rem;
-    display: inline-block;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    padding-left: 0.2rem;
     background-size: auto 120%;
     filter: var(--invert);
 }
 
+.page-nav a.github::after,
+.page-nav a.linkedin::after,
+.page-nav a.email::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background: var(--accent2);
+    border-radius: 999px;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+    bottom: -3px;
+}
+
+.page-nav a.github:hover::after,
+.page-nav a.linkedin:hover::after {
+    width: 60%;
+    bottom: -3px;
+}
+
+.page-nav a.email:hover::after {
+    width: 60%;
+    bottom: -2px;
+}
 
 .page-nav a.github:hover,
 .page-nav a.linkedin:hover,

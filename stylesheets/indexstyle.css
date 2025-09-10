@@ -89,7 +89,7 @@ section {
 section h2 {
   font-size: 1.6rem;
   margin-bottom: 1.5rem;
-  border-bottom: 2px solid var(--accent2);
+  border-bottom: 1px solid var(--accent2);
 }
 
 section.experience ul {
@@ -217,4 +217,16 @@ section.experience ul {
 
 .skills ul {
   padding-left: 2.45rem;
+}
+
+.divider {
+  height: 1px;
+  background: linear-gradient(90deg, var(--accent2), transparent);
+  margin: .75rem auto;
+  width: 50%;
+  border-radius: 1px;
+}
+
+ul li::marker {
+  color: var(--accent2);
 }

@@ -13,7 +13,7 @@
   --button-color: #fff;
   --button-background: #484848;
   --switch-track: #cecece;
-  --switch-flip: #555;
+  --switch-flip: #838383;
   --link-normal: #0077b6;
   --link-visited: #1089c2;
   --tn-boxshadow-in: 0 6px 8px rgba(0,0,0,0.25);
@@ -26,6 +26,7 @@
   --accent2: #0077b6;
   --opacity: 70%;
   --track-active: #0077b6;
+  --track-inactive: #0076b671;
 }
 
 .textbody {
@@ -58,6 +59,7 @@
   --accent2: #14b8a6;
   --opacity: 50%;
   --track-active: #14b8a6;
+  --track-inactive: #14b8a671;
 }
 
 a:link {
