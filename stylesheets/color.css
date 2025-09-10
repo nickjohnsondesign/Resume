@@ -15,7 +15,7 @@
   --switch-track: #cecece;
   --switch-flip: #838383;
   --link-normal: #0077b6;
-  --link-visited: #1089c2;
+  --link-visited: rgb(9, 76, 107);
   --tn-boxshadow-in: 0 6px 8px rgba(0,0,0,0.25);
   --tn-boxshadow-out: 0 -6px 8px rgba(0,0,0,0.25); 
   --modal-bg: rgba(0,0,0,0.85);
@@ -51,7 +51,7 @@
   --switch-track: #4b4b4b;
   --switch-flip: #555;
   --link-normal: #57b1dc;
-  --link-visited: #1089c2;
+  --link-visited: #0d7064;
   --tn-boxshadow-in: 0 6px 8px rgba(0,0,0,0.25);
   --tn-boxshadow-out: 0 -6px 8px rgba(0,0,0,0.25); 
   --modal-bg: rgba(0,0,0,0.85);
@@ -63,7 +63,7 @@
 }
 
 a:link {
-  color: var(--link-normal);
+  color: var(--accent2);
   background-color: transparent;
   text-decoration: underline;
 }

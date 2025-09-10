@@ -49,11 +49,6 @@ ul {
   box-shadow: var(--box-shadow-content);
 }
 
-h2 {
-  border-bottom: 2px solid var(--accent2);
-  
-}
-
 section {
   padding: .5% 20px;
   margin: 20px auto;
@@ -89,6 +84,9 @@ section {
 section h2 {
   font-size: 1.6rem;
   margin-bottom: 1.5rem;
+}
+
+.projects h2, .education h2, .skills h2, .experience h2 {
   border-bottom: 1px solid var(--accent2);
 }
 
@@ -98,7 +96,7 @@ section.experience ul {
 
 .work {
   margin-bottom: 1.35rem;
-  padding: 1.25rem;
+  padding: 1.35rem;
   border-radius: 12px;
   background: var(--card-bg2);
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -198,8 +196,12 @@ section.experience ul {
 }
 
 .project-content ul {
-  margin-left: 1rem;
   margin-bottom: 0;
+  max-width: 90%;
+}
+
+.projects .work ul {
+  max-width: 75%;
 }
 
 .education h2{
@@ -229,4 +231,40 @@ section.experience ul {
 
 ul li::marker {
   color: var(--accent2);
+}
+
+.summary-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--accent2);
+    margin-bottom: 1rem;
+}
+
+.summary-header h2 {
+    margin: 0;
+    margin-top : .9rem;
+}
+
+.resume-btn {
+    background-color: var(--accent2);
+    color: var(--card-bg);
+    padding: 0;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    transform: translateY(25%);
+}
+
+.resume-btn:hover {
+    transform: scale(1.05) translateY(25%);
+}
+
+@media (max-width: 600px) {
+    .summary-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
 }
