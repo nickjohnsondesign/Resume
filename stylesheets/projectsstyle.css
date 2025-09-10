@@ -27,7 +27,7 @@ h1 {
   flex-direction: column;
   margin: 2rem auto;
   padding: 1.5rem;
-  max-width: 1200px;
+  max-width: 65%;
   background: var(--card-bg);
   border-radius: 12px;
   box-shadow: 8px 8px 8px rgba(0,0,0,0.2);
@@ -45,6 +45,7 @@ h1 {
   display: flex;
   gap: 1.5rem;
   align-items: flex-start;
+  margin: 0 1%;
 }
 
 .hfwf .wireframe-content img, 
@@ -85,9 +86,6 @@ h1 {
   color: var(--accent2);
 }
 
-.hfwf .wireframe-content {
-  margin: 0 1%;
-}
 
 .hfwf .wireframe-content a {
   color: var(--text);
@@ -139,7 +137,7 @@ h1 {
 }
 
 .hfwf.combined {
-max-width: 1200px;
+max-width: 65%;
 }
 
 .hfwf.combined h3 {
@@ -194,7 +192,7 @@ max-width: 1200px;
 }
 
 @media (max-width: 768px) {
-  .hfwf.combined .wireframe-content {
+  .hfwf.combined .wireframe-content, .hfwf .wireframe-content {
     flex-direction: column;
     align-items: center;
   }
@@ -214,10 +212,3 @@ max-width: 1200px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   gap: 20px;
 }
-
-/* a {
-  color: var(--accent2);
-  text-decoration: none;
-  transition: color 0.3s ease;
-  border-bottom: 2px solid var(--accent2);
-} */
