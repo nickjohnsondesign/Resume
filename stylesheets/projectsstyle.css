@@ -27,7 +27,7 @@ h1 {
   flex-direction: column;
   margin: 2rem auto;
   padding: 1.5rem;
-  max-width: 80%;
+  max-width: 1200px;
   background: var(--card-bg);
   border-radius: 12px;
   box-shadow: 8px 8px 8px rgba(0,0,0,0.2);
@@ -90,7 +90,14 @@ h1 {
 }
 
 .hfwf .wireframe-content a {
-  color: var(--accent);
+  color: var(--text);
+  text-decoration: underline;
+  text-decoration-color: var(--accent2);
+  transition: color 0.3s ease;
+}
+
+.hfwf .wireframe-content a:hover {
+  color: var(--a-hover);
   text-decoration: underline;
 }
 
@@ -113,7 +120,7 @@ h1 {
 
 .wireframe-content .slides-container {
   display: flex;
-  gap: 1.5rem; 
+  gap: .75rem; 
   align-items: flex-start;
 }
 
@@ -130,3 +137,87 @@ h1 {
   flex: 1 1 50%;
   text-align: left;
 }
+
+.hfwf.combined {
+max-width: 1200px;
+}
+
+.hfwf.combined h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.25rem;
+}
+
+.hfwf.combined .project-intro {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.hfwf.combined .phase h4 {
+  font-size: 1.35rem;
+  margin-bottom: 0.75rem;
+  color: var(--text);
+  margin-top: 0;
+}
+
+.hfwf.combined .phase h4 a {
+  text-decoration: none;
+  color: var(--text);
+  transition: color 0.3s ease;
+  border-bottom: 1px solid var(--accent2);
+}
+
+.hfwf.combined .phase a:hover {
+  color: var(--accent2);
+}
+
+.hfwf.combined .wireframe-content {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.hfwf.combined .wireframe-content img {
+  max-width: 500px;
+  width: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid var(--accent2);
+  max-height: 250px;
+}
+
+.hfwf.combined .wireframe-content p {
+  flex: 1;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .hfwf.combined .wireframe-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hfwf.combined .wireframe-content img {
+    max-width: 100%;
+  }
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 1.35rem;
+  padding: 1.35rem;
+  border-radius: 12px;
+  background: var(--card-bg2);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  gap: 20px;
+}
+
+/* a {
+  color: var(--accent2);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  border-bottom: 2px solid var(--accent2);
+} */
