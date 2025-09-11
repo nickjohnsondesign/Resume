@@ -61,7 +61,7 @@ section {
 }
 
 .summary {
-  background: var(--card-bg2);
+  background: var(--card-bg);
 }
 
 .summary h2 {
@@ -74,7 +74,7 @@ section {
 }
 
 .education {
-  background: var(--card-bg2);
+  background: var(--card-bg);
 }
 
 .skills {
@@ -82,7 +82,7 @@ section {
 }
 
 section h2 {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   margin-bottom: 1.5rem;
 }
 
@@ -234,37 +234,139 @@ ul li::marker {
 }
 
 .summary-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid var(--accent2);
-    margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--accent2);
+  margin-bottom: 1rem;
 }
 
 .summary-header h2 {
-    margin: 0;
-    margin-top : .9rem;
+  margin: 0;
+  margin-top : .9rem;
 }
 
 .resume-btn {
-    background-color: var(--accent2);
-    color: var(--card-bg);
-    padding: 0;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    transform: translateY(25%);
+  background-color: var(--accent2);
+  color: var(--card-bg);
+  padding: 0;
+  border-radius: 8px;
+  text-decoration: none;
+  transform: translateY(25%);
 }
 
-.resume-btn:hover {
-    transform: scale(1.05) translateY(25%);
-}
 
 @media (max-width: 600px) {
-    .summary-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.5rem;
-    }
+  .name-container {
+    margin: 1.5rem;
+    font-size: .85rem;
+  }
+
+  .name-container .name{
+    white-space: nowrap;
+    font-size: 1.5rem;
+  }
+
+  body {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0 1rem;
+  }
+
+  .summary-header {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: space-between;
+    padding-top: 1rem;
+  }
+
+  .summary-header h2 {
+    margin-top: 0;
+  }
+
+  .resume-btn {
+    transform: none;
+    font-size: 0.9rem;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5rem;
+  }
+
+  h5 {
+    font-size: 0.9rem;
+  }
+
+  section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .project-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .project-thumb {
+    max-width: 90%;
+    margin-bottom: 0.75rem;
+  }
+
+  .project-thumb img {
+    height: auto;
+  }
+
+  .project-content {
+    flex: 1;
+    max-width: 100%;
+    align-items: center;
+  }
+
+  .project-content ul {
+    max-width: 100%;
+    padding-left: 1rem;
+    text-align: left; 
+  }
+
+  .projects .work ul {
+    max-width: 100%;
+  }
+
+  .work {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .work .job-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+
+  .work ul {
+    max-width: 100%;
+    margin-left: 0;
+    padding-left: 1rem;
+  }
+
+  .work .job-dates {
+    white-space: normal; 
+    font-size: .9rem;
+    text-align: left;
+  }
+
+  .skills ul li{
+    padding-bottom: .5rem;
+  }
+
+  .skills ul {
+    padding-left: 1rem;
+  }
 }
