@@ -100,7 +100,7 @@ header {
 }
 
 .page-nav .links {
-    position: static;
+    position: absolute;
     display: flex;
     gap: 0.5rem;
 }
@@ -222,6 +222,7 @@ header {
     justify-content: flex-start;
     width: 100%;
     gap: 0.5rem;
+    position: static;
   }
 
   .page-nav li {
