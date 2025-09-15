@@ -40,3 +40,4 @@
 .theme-switch input:checked + label::after {
   transform: translateX(24px) translateY(-50%); 
 }
+

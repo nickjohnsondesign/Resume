@@ -54,10 +54,18 @@ section {
   margin: 20px auto;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  border: 2px solid transparent;
+}
+
+section:hover{
+  transform: scale(1.01);
+  box-shadow: 10px 8px 10px rgba(0,0,0,0.175);
+  border: 2px solid var(--accent2);
 }
 
 .summary, .projects, .project-container, .project-content, .education, .skills {
-    transition: background 0.3s ease, color 0.3s ease;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .summary {
