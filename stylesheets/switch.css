@@ -12,11 +12,16 @@
   display: block;
   width: 50px;
   height: 26px;
-  background: var(--switch-track);
+  background-color: var(--switch-track);
   border-radius: 13px;
   position: relative;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: background-color 0.3s;
+  overflow: hidden;
+  color: var(--accent2);
+  background-repeat: no-repeat, no-repeat;
+  background-position: 6px center, calc(100% - 6px) center; 
+  background-size: 14px 14px, 14px 14px;
 }
 
 .theme-switch label::after {
@@ -28,16 +33,38 @@
   position: absolute;
   top: 50%;
   left: 2px;
-  transform: translateY(-50%);
+  transform: translate(0, -50%);
   transition: transform 0.3s;
   box-shadow: 0 2px 5px var(--nav);
+  z-index: 2;
 }
 
 .theme-switch input:checked + label {
-  background: var(--switch-flip);
+  background-color: var(--switch-flip);
 }
 
 .theme-switch input:checked + label::after {
-  transform: translateX(24px) translateY(-50%); 
+  transform: translate(24px, -50%);
 }
 
+.icon {
+  width: 14px;     
+  height: 14px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.icon.sun { 
+  position: absolute; 
+  left: 6px; 
+  top: 50%; 
+  transform: translateY(-50%); 
+}
+
+.icon.moon { 
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+}
