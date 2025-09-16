@@ -261,7 +261,7 @@ ul li::marker {
   transform: translateY(25%);
 }
 
-a {
+.textbody a, h5 a {
   text-decoration: none;
   color: var(--text);
   transition: color 0.3s ease;

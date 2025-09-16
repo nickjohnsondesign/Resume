@@ -136,8 +136,7 @@ header {
 }
 
 [data-theme="dark"] .page-nav .email {
-    background-image: url("../thumbnail/envelopeblack.svg");
-
+    background-image: url("../thumbnail/envelopewhite.svg");
 }
 
 .page-nav .nav-links {
@@ -167,7 +166,6 @@ header {
 .page-nav a.email {
     padding-left: 0.2rem;
     background-size: auto 120%;
-    filter: var(--invert);
 }
 
 .page-nav a.github::after,
