@@ -255,14 +255,29 @@ ul li::marker {
 }
 
 .resume-btn {
-  background-color: var(--accent2);
-  color: var(--card-bg);
+  color: var(--accent2);
   padding: 0;
-  border-radius: 8px;
   text-decoration: none;
   transform: translateY(25%);
 }
 
+a {
+  text-decoration: none;
+  color: var(--text);
+  transition: color 0.3s ease;
+  border-bottom: 2px solid var(--accent2);
+}
+a:hover {
+  color: var(--accent2);
+}
+
+.project-thumb a {
+  border: none;
+}
+
+.contact a {
+  border: none;
+}
 
 @media (max-width: 600px) {
   .name-container {

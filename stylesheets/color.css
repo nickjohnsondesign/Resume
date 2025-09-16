@@ -62,17 +62,17 @@
   --track-inactive: #14b8a671;
 }
 
-a:link {
+/* a:link {
   color: var(--accent2);
   background-color: transparent;
   text-decoration: underline;
-}
+} */
 
-a:visited {
+/* a:visited {
   color: var(--link-visited);
   background-color: transparent;
   text-decoration: underline;
-}
+} */
 
 a {
   transition: all 0.3s ease-in-out;
